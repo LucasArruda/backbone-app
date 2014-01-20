@@ -1,0 +1,47 @@
+{
+  "name": "backbone-app",
+  "version": "0.0.1",
+  "homepage": "https://github.com/LucasArruda/backbone-app",
+  "authors": [
+    "Lucas Arruda <larruda@avenuecode.com>"
+  ],
+  "description": "A backbone sample app.",
+  "main": "index.html",
+  "keywords": [
+    "backbone",
+    "amd",
+    "require.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.0",
+    "jquery": "~2.0.3",
+    "requirejs": "~2.1.10",
+    "underscore": "~1.5.2",
+    "commonjs": "~0.2.0"
+  },
+  "exportsOverride": {
+    "requirejs": {
+      "js": "require.js"
+    },
+    "jquery": {
+      "js": "jquery.js"
+    },
+    "underscore": {
+      "js": "underscore.js"
+    },
+    "backbone": {
+      "js": "backbone.js"
+    },
+    "commonjs": {
+      "js": "common.js"
+    }
+  }
+}
