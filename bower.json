@@ -21,11 +21,10 @@
     "tests"
   ],
   "dependencies": {
-    "backbone": "~1.1.0",
     "jquery": "~2.0.3",
     "requirejs": "~2.1.10",
-    "underscore": "~1.5.2",
-    "commonjs": "~0.2.0"
+    "backbone-amd": "~1.1.0",
+    "underscore-amd": "~1.5.2"
   },
   "exportsOverride": {
     "requirejs": {
@@ -34,14 +33,11 @@
     "jquery": {
       "js": "jquery.js"
     },
-    "underscore": {
+    "underscore-amd": {
       "js": "underscore.js"
     },
-    "backbone": {
+    "backbone-amd": {
       "js": "backbone.js"
-    },
-    "commonjs": {
-      "js": "common.js"
     }
   }
 }

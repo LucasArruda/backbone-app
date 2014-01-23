@@ -4,16 +4,33 @@
   <meta charset=utf-8 />
   <title>Sample Backbone App</title>
   <meta name="viewport" content="width=device-width">
-  <link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
 </head>
   
 <body>
   
   <div class="wrapper">
-    
-    
+  	<p>
+    	1. Open Chrome Inspector and go to Network.
+    </p>
+    <p>
+    	2. Click the button:
+    </p>
   </div>
 
+
   <script data-main="src/main" src="lib/js/requirejs/require.min.js"></script>
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Doppio+One::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
 </body>
 </html>

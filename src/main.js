@@ -1,9 +1,9 @@
 require.config({
+  enforceDefine: true,
   paths: {
     jquery: '../lib/js/jquery/jquery.min',
-    backbone: '../lib/js/backbone/backbone.min',
-    underscore: '../lib/js/underscore/underscore.min',
-    commonjs: '../lib/js/commonjs/common.min'
+    backbone: '../lib/js/backbone-amd/backbone.min',
+    underscore: '../lib/js/underscore-amd/underscore.min'
   },
   shim: {
     "underscore": {
@@ -17,9 +17,5 @@ require.config({
   }
 });
 
-require(['jquery', 'underscore', 'backbone', 'commonjs'], function ($, _, Backbone) {
-    console.log("Test output");
-    console.log("$: " + typeof $);
-    console.log("_: " + typeof _);
-    console.log("Backbone: " + typeof Backbone);
+define(["app"], function(app){
 });
